@@ -7,7 +7,7 @@ function Write() {
     const SaveData = async () => {
         console.log('enter')
         try {
-            let response= await axios.post('http://localhost:5000/writetodatabase', { content: inputVal })
+            let response= await axios.post('http://localhost:4000/writetodatabase', { content: inputVal })
             console.log(inputVal,response,'11::')
             alert("Data save Succesfully")
             setInput('')
